@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = "http://54.198.79.52:3004"; // Replace with your actual backend URL
+export const API_URL = "https://policy.sirleafda.com"; // Replace with your actual backend URL
 
 // Create an Axios instance
 const apiClient = axios.create({
