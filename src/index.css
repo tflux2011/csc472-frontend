@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-sr-primary {
+  @apply inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900;
+}
+
+.btn-sr-sm-primary {
+  @apply rounded-md bg-primary-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+
+.input-text {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.input-password {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.input-check {
+  @apply w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800;
+}
+
+.text-sr-link {
+  @apply font-medium text-primary-600 hover:underline dark:text-primary-500;
+}
+
+.btn-submit {
+  @apply w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800;
+}
+
+.nav-item {
+  @apply block py-2 px-3  bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500;
+}
+
+.active {
+  @apply text-white;
+}
+
+.active-nav {
+  @apply bg-gray-100 text-gray-900 p-2 rounded-lg;
+}
+
+.inactive-nav {
+  @apply text-gray-900 rounded-lg p-2 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700;
+}
+
+.nav-link {
+  @apply inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline;
+}
+
+.badge {
+  @apply bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800;
+}
+
+.btn-dots {
+  @apply inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg focus:outline-none focus:ring-gray-50 dark:focus:ring-gray-600;
+}
+
+.btn-dots-link {
+  @apply block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
+}
+
+.quill .ql-container {
+  max-height: calc(100% - 42px);
+}
+
+.ql-editor {
+  min-height: 150px; /* Set the minimum height for content */
+  max-height: 300px; /* Set the maximum height for content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Optional: Add padding inside the editor */
+}
+
+.filters {
+  position: sticky;
+  top: 0; /* Adjust this value if you have a fixed header */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable scrolling if filters content overflows */
+  padding-right: 1rem; /* Adjust for aesthetics */
+  background-color: #fff; /* Ensure it has a background */
+  z-index: 10; /* Ensure it stays above other elements */
+  border-right: 1px solid #e5e7eb; /* Optional: Separator line */
+}
